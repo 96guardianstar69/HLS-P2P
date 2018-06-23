@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>P2P Streaming</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        body {
+            margin-top: 1em;
+            margin-bottom: 3em;
+        }
+    </style>
+    <script>
+        var urlVideo = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
+    </script>
+</head>
+<body class="container">
+
+<div id="main-view" class="row">
+    <div id="error-webrtc-data-channels" class="col-md-12 hide">
+        Browser does not support WebRTC<br>
+        <hr>
+    </div>
+    <div id="error-hls-js" class="col-md-12 hide">
+        Browser does not support HLS JS
+        <hr>
+    </div>
+    <div class="col-md-8 view-video">
+        <div id="video_container" class="text-center"></div>
+        <div class="info">
+            <div class="total"></div>
+            <div class="server"></div>
+            <div class="p2p"></div>
+            <div class="connected-peers"></div>
+            <div class="ip-peers"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="scripts/app.js"></script>
+</body>
+</html>
